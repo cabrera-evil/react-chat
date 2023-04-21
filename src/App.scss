@@ -1,3 +1,24 @@
+*{
+  overflow: hidden;
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .button {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
 @mixin mobile {
   @media screen and (max-width: 480px) {
     @content;
@@ -238,7 +259,7 @@
         background-color: #ddddf7;
         padding: 10px;
         height: calc(100% - 160px);
-        overflow: scroll;
+        overflow-y: scroll;
 
         .message {
           display: flex;
