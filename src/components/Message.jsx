@@ -1,13 +1,10 @@
 import React from 'react'
 
-// Import pictures
-import emptyProfile from '../img/emptyProfile.png'
-
 const Message = () => {
     return (
         <div className='message owner'>
             <div className='messageInfo'>
-                <img src={emptyProfile} alt="Profile picture" />
+                <img src="" alt="Profile picture" />
                 <span>Just now</span>
             </div>
             <div className='messageContent'>

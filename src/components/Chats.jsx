@@ -1,13 +1,10 @@
 import React from 'react'
 
-// Import pictures
-import emptyProfile from '../img/emptyProfile.png'
-
 const Chats = () => {
     return (
         <div className='chats'>
             <div className='userChat'>
-                <img src={emptyProfile} alt="No profile picture" />
+                <img src="" alt="Profile picture" />
                 <div className='userChatInfo'>
                     <span>Username</span>
                     <p>Hello</p>

@@ -8,7 +8,6 @@ import { auth, db, storage } from "../firebase";
 
 // Import styles
 import Add from "../img/add.png";
-import emptyProfile from "../img/emptyProfile.png";
 
 const Register = () => {
     return (

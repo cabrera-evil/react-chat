@@ -7,7 +7,7 @@ import Img from '../img/img.png'
 const Input = () => {
     return (
         <div className='input'>
-            <input type="text" placeholder='Type a message...' />
+            <input type="text" placeholder='Type something...' />
             <div className='send'>
                 <img src={Attach} alt="Send" />
                 <input type="file" style={{display: 'none'}} id="file"/>
