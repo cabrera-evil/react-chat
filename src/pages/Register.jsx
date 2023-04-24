@@ -1,5 +1,14 @@
-import React from "react";
+// Import modules
+import { React, useState, useNavigate } from "react";
+import { toast } from "react-toastify";
+
+// Import firebase
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { auth, db, storage } from "../firebase";
+
+// Import styles
 import Add from "../img/add.png";
+import emptyProfile from "../img/emptyProfile.png";
 
 const Register = () => {
     return (
@@ -7,11 +16,10 @@ const Register = () => {
             <div className="formWrapper">
                 <span className="logo">Evil Chat</span>
                 <span className="title">Register</span>
-                <form className="form">
+                <form>
                     <input type="text" placeholder="Username" />
                     <input type="email" placeholder="Email" />
                     <input type="password" placeholder="Password" />
-                    <input type="password" placeholder="Confirm Password" />
                     <label htmlFor="file">
                         <img src={Add} alt="" />
                         <span>Add an avatar</span>
