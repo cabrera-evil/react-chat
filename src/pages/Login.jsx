@@ -11,18 +11,18 @@ const Login = () => {
         const email = e.target[0].value;
         const password = e.target[1].value;
 
-        try{
+        try {
             signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                console.log(user);
-                // ...
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-            });
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    console.log(user);
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                });
         } catch (err) {
             console.error(err);
         }
@@ -38,7 +38,9 @@ const Login = () => {
                     <input type="password" placeholder="Password" />
                     <button className="btn">Sing in</button>
                 </form>
-                <p>You don't have an account? Register</p>
+                <p>
+                    You don't have an account? <Link to="/register">Register</Link>
+                </p>
             </div>
         </div>
     );

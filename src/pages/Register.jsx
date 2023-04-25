@@ -44,7 +44,9 @@ const Register = () => {
                     <input type="password" placeholder="Password" />
                     <button className="btn">Sing up</button>
                 </form>
-                <p>You do have an account? Login</p>
+                <p>
+                    You do have an account? <Link to="/login">Login</Link>
+                </p>
             </div>
         </div>
     );
