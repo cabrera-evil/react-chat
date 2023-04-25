@@ -1,11 +1,12 @@
+// Import modules
 import React from 'react'
-
+// Import components
+import Messages from './Messages'
+import Input from './Input'
 // Import pictures
 import Cam from '../img/cam.png'
 import Add from '../img/add.png'
 import More from '../img/more.png'
-import Messages from './Messages'
-import Input from './Input'
 
 const Chat = () => {
     return (

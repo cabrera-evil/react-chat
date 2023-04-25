@@ -1,5 +1,5 @@
+// Import modules
 import React from 'react'
-
 // Import components
 import Navbar from './Navbar'
 import Search from './Search'

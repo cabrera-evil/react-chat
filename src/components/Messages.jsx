@@ -1,5 +1,5 @@
+// Import modules
 import React from 'react'
-
 // Import components
 import Message from './Message'
 

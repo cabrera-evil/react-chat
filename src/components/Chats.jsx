@@ -1,3 +1,4 @@
+// Import modules
 import React from 'react'
 
 const Chats = () => {
