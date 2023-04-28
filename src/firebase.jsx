@@ -8,12 +8,11 @@ import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyANkXoHqqgMUEwpeST2j7kcLQtJmv4SEso",
-    authDomain: "react-chat-60f38.firebaseapp.com",
-    projectId: "react-chat-60f38",
-    storageBucket: "react-chat-60f38.appspot.com",
-    messagingSenderId: "336561827359",
-    appId: "1:336561827359:web:6a913f8a9f8454991daf2a",
-    measurementId: "G-W0SKBNEV37"
+    authDomain: "react-chat-b89f5.firebaseapp.com",
+    projectId: "react-chat-b89f5",
+    storageBucket: "react-chat-b89f5.appspot.com",
+    messagingSenderId: "111968003042",
+    appId: "1:111968003042:web:b8c77410a926f136b78fbb"
 };
 
 // Initialize Firebase
