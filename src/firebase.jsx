@@ -3,9 +3,6 @@ import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 
-// env variables
-// const firebase_key = import.meta.env.REACT_APP_FIREBASE_KEY;
-
 const firebaseConfig = {
     apiKey: "AIzaSyANkXoHqqgMUEwpeST2j7kcLQtJmv4SEso",
     authDomain: "react-chat-b89f5.firebaseapp.com",
