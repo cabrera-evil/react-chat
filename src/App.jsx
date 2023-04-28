@@ -1,29 +1,40 @@
-// Import modules
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { useContext } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-// Import components
-import Register from './pages/Register'
-import Login from './pages/Login'
-import Home from './pages/Home'
-// Import context
-import { AuthContext } from "./context/AuthContext";
-// Import styles
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import './assets/scss/App.scss'
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "./context/AuthContext";
 
 function App() {
+  const { currentUser } = useContext(AuthContext);
+
+  const ProtectedRoute = ({ children }) => {
+    if (!currentUser) {
+      return <Navigate to="/login" />;
+    }
+
+    return children
+  };
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/">
-          <Route path="/" element={<Home />} />
+          <Route
+            index
+            element={
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>
+            }
+          />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
