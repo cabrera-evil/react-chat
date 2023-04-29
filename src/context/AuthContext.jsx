@@ -1,6 +1,4 @@
-// Import modules
 import { createContext, useEffect, useState } from "react";
-// Import firebase
 import { auth } from "../firebase";
 import { onAuthStateChanged } from "firebase/auth";
 
